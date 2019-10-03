@@ -21,7 +21,7 @@ public class PrimeNumbers {
 	}
 	
 	public void generateNumbers (Integer max) {
-		primes = new ArrayList<Integer>();
+		primes = new ArrayList<>();
 		primes.add(2);
 
 		Integer next = 2;
