@@ -43,3 +43,6 @@ jinfo -flag CompileThreshold 2988
 java =XX:CICompilerCount=6 -XX:+PrintCompilation Main 5000
 java -XX:CICompilerCount=6 -XX:CompilerThreshold=1000-XX:+PrintCompilation Main 5000
 
+#Java memory
+The stack(primitives e variaveis locais): pilha de memoria, vai adicionando as variveis na pilha
+The heap(objetos): eficiencia 

@@ -2,7 +2,7 @@
 public class Main {
 
 	
-	public static void calculate(int calcValue) {
+	public static void calculate(Integer calcValue) {
 		calcValue = calcValue * 100;
 	}
 	
@@ -11,6 +11,21 @@ public class Main {
 		calculate(localValue);
 		System.out.println(localValue);
 
+		final Customer c = new Customer("fefe");
+		c.nome = "fe";
+
+		final String t = "f";
+
+		System.out.println(c.nome);
+
 	}
 
+}
+
+class Customer{
+	String nome;
+
+	Customer(String nome){
+		this.nome = nome;
+	}
 }
