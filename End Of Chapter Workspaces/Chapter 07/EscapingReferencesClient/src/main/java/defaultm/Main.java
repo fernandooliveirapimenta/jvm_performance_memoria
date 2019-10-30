@@ -1,4 +1,4 @@
-package main;
+package defaultm;
 
 import com.virtualpairprogrammers.escapingreferences.customers.CustomerRecords;
 import com.virtualpairprogrammers.escapingreferences.customers.ReadonlyCustomer;
@@ -10,7 +10,7 @@ public class Main {
 		
 		records.addCustomer("John");
 		records.addCustomer("Simon");
-		
+
 		for (ReadonlyCustomer c : records) {
 			System.out.println(c);
 		}

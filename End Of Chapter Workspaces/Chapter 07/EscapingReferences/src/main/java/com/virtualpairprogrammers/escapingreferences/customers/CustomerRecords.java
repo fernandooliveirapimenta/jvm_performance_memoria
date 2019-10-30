@@ -11,7 +11,7 @@ public class CustomerRecords implements Iterable<Customer> {
 	private Map<String, Customer> records;
 	
 	public CustomerRecords() {
-		this.records = new HashMap<String, Customer>();
+		this.records = new HashMap<>();
 	}
 	
 	public void addCustomer(String name) {
