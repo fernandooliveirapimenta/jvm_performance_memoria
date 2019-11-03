@@ -23,8 +23,7 @@ public class Price {
 		}
 		else {
 			Double conversion = rates.get("USD") * rates.get(toCurrency);
-			value = conversion * value;
-			return value;
+			return conversion * value;
 		}
 	}
 	
@@ -33,7 +32,7 @@ public class Price {
 	}
 	
 	public Map<String,Double> getRates() {
-		return rates;
+		return Map.copyOf(rates);
 	}
 	
 }
